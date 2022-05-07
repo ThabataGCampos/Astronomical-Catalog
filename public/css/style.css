@@ -231,11 +231,10 @@ input, select, textarea {
 /* style mensage confirmation */
 
 section#message {
-    padding: 1.5rem;
-    background-color: rgb(201, 196, 196);
+    padding: 0.8rem;
+    background-color: rgb(124, 36, 136);
     color: black;
     position: fixed;
-    /* top: 3rem; */
     left: 0;
     right: 0;
     z-index: 100;

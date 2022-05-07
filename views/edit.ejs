@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/DhQUFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAAAAAAAAAAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAIEBAMAAAD/AAAAAAAAAP8AAAAAAAAAAAAAAP8AAAD/AAAA/wAAAAAAAAAAAAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/Cg0ODgAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAAAAAAAAAAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAAAAAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAAAD8AADHPAACsZwAAjxcAAO/HAADv8wAA5/EAAPftAADzzAAA/CAAAP//AAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Register</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %> 
+
+    <main id="mainregister">
+        <form action="/edit/<%=astroAtt.id%>" method="POST">
+            <fieldset>
+                <h3>Edit <%=astroAtt.nickname%>:</h3>
+                <fieldset>
+                    <label for="name">Scientific name:</label>
+                    <input type="text" id="name" name="name" value="<%=astroAtt.name%>">
+                </fieldset>
+
+                <fieldset>
+                    <label for="nickname">Common name:</label>
+                    <input type="text" id="nickname" name="nickname" required value="<%=astroAtt.nickname%>">
+                </fieldset>
+
+                <fieldset>
+                    <label for="image">Image:</label>
+                    <input type="url" id="image" name="image" style="height: 1.2rem; width: 20rem;" required value="<%=astroAtt.image%>">
+                </fieldset>
+
+                <fieldset>
+                    <label for="description">Description: </label>
+                    <input type="text" id="description" name="description" value="<%=astroAtt.description%>">
+                </fieldset>
+
+                <fieldset>
+                    <label for="distance">Distance: </label>
+                    <input type="text" id="distance" name="distance" value="<%=astroAtt.distance%>">
+                </fieldset>
+
+                <fieldset>
+                    <label for="category">Category: </label>
+                    <input type="text" id="category" name="category" required value="<%=astroAtt.category%>">
+                </fieldset>
+
+                <fieldset>
+                    <label for="constellation">Constellation: </label>
+                    <input type="text" id="constellation" name="constellation" value="<%=astroAtt.constellation%>">
+                </fieldset>
+
+                <button id="sendbtn" type="submit">Send</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <%- include('./partials/footer.ejs') %> 
+</body>
+</html>

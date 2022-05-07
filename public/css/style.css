@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 10vh;
+    background-color: black
+}
+
+header nav {
+    display: flex;
+    align-items:flex-start;
+    width: 100%; 
+}
+
+ul#menu{
+    display: flex;
+    list-style: none;
+    text-align: left;
+}
+
+ul#menu li{
+    padding: 0.7rem; 
+    font-size: 1.3rem;
+}
+
+ul#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+ul#menu a:hover {
+    color: gray;
+}
+
+main{
+    background-color: rgb(21, 20, 24);
+    min-height: 83vh;
+    width: 100%;
+}
+
+#main-details{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 83vh;
+    align-content: space-around;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.cards a{
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card{
+    margin-top: 2rem;
+    width: 18rem;
+    height: 22rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+#boximage{
+    height: 18rem;
+    width: 18rem;
+    max-width: 18rem;
+    max-height: 18rem;
+}
+
+#image{ 
+    max-width: 100%;
+    max-height: 100%;
+    height: 250px;
+    width: 300px;
+}
+
+#card-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#card-name{
+    color: gray;
+    font-size: 1rem;
+    
+}
+
+#card-nick{
+    font-size: 1.2rem;
+}
+
+.fa-solid fa-trash{
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+#imgD{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgdetails{
+    max-width: 370px;
+    min-height: 320px;
+}
+
+.texto{
+    color:white;
+    line-height: 1.8rem;
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+.texto2{
+    color:white;
+    line-height: 2rem;
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.texto h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.btncontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    color: white
+}
+
+#mainregister{
+    display: flex;
+   justify-content: center;
+   
+}
+
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem;
+    border: none;
+    width: 6rem;
+    height: 6rem;
+    color: white;
+}
+
+fieldset h3{
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+input, select, textarea, button {
+    border-radius: 5px;
+}
+
+input, select, textarea {
+   width: 20rem;
+}
+
+.campo input[type="text"], .campo input[type="url"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+#sendbtn{
+    display: flex;
+    margin: 1rem auto 0 auto;
+    font-size: 1.2em;
+    background: rgb(2, 2, 43);
+    border: 0;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+#sendbtn:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* style mensage confirmation */
+
+section#message {
+    padding: 1.5rem;
+    background-color: rgb(201, 196, 196);
+    color: black;
+    position: fixed;
+    /* top: 3rem; */
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }
+  
+  span#close:hover{
+    color: gray;
+    transform: scale(1.5);
+  }
+
+
+footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    height: 7vh;
+    font-size: 0.8rem;
+}
+
+footer a{
+    color: gray;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+footer a:hover{
+    color: white;
+}

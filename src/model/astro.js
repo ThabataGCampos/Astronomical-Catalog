@@ -42,3 +42,9 @@ export const astro = connection.define('astro',{
     updatedAd: false,
     timestamps: false
 })
+
+const initTable = async () => {
+    await astronomical.sync()
+}
+
+initTable()

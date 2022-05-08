@@ -98,7 +98,9 @@ main{
     max-height: 100%;
     height: 250px;
     width: 300px;
+    background-size: cover;
 }
+
 
 #card-texto{
     display: flex;

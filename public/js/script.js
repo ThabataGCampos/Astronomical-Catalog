@@ -1,3 +1,5 @@
+//arquivo para criar as mensagens de aviso
+
 const closeMessage = document.querySelector("#close");
 const message = document.querySelector("#message");
 

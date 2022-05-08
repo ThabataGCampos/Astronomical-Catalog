@@ -43,8 +43,9 @@ export const astro = connection.define('astro',{
     timestamps: false
 })
 
+// para subir no render
 const initTable = async () => {
-    await astronomical.sync()
+    await astro.sync()
 }
 
 initTable()

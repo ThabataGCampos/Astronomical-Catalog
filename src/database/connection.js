@@ -14,6 +14,7 @@ export const connection = new Sequelize(
 //     }
 // )
 
+// para subir para o render
 'postgres://astronomical_user:QiODynBYb1eE16hyKKXlHXAb43PuX4mT@dpg-c9rgh30ivq0corledgmg-a.oregon-postgres.render.com/astronomical',
 {
     dialect: 'postgres',

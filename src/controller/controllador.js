@@ -56,11 +56,11 @@ export const getEdit = async(req, res) => {
 
 export const postEdit = async (req, res) => {
     try {
-        const {name, nickname, img, description, distance, category, constellation} = req.body
+        const {name, nickname, image, description, distance, category, constellation} = req.body
         await astro.update({
             name: name,
             nickname: nickname,
-            img: img,
+            image: image,
             description: description,
             distance: distance,
             category: category,

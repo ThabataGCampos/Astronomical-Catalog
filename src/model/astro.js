@@ -9,31 +9,32 @@ export const astro = connection.define('astro',{
         autoIncrement: true
     },
     name: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(20),
         allowNull: true
     }, 
     nickname: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(20),
         allowNull: false
     },
     image: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(300),
         allowNull: true
     },
     description: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(2000),
         allowNull: true
+      
     },
     distance: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(300),
         allowNull: true
     },
     category: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(300),
         allowNull: false
     },
     constellation: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(50),
         allowNull: true
     }
 }, {

@@ -1,4 +1,4 @@
-## Astronomical catalog
+## Astronomical catalog :stars:
 
 ## Descrição
 Esse projeto foi realizado para o curso da Blue EdTech módulo II.

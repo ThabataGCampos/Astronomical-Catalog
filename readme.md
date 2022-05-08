@@ -3,6 +3,12 @@
 ## Descrição
 Esse projeto foi realizado para o curso da Blue EdTech módulo II.
 
+
+Clique no ícone abaixo para acessar o projeto:
+
+<a href="https://astronomical-catalog.onrender.com/" target="_blank"><img style="width:5%" src="./public/css/saturnicon.png" alt="saturIcon"></a>
+
+
 ## Stacks
 Ferramentas usadas:
 <div style="display:flex">
